@@ -12,10 +12,11 @@ import java.time.LocalDate;
 @JsonDeserialize(builder = Reservation.Builder.class)
 public class Reservation implements Serializable {
     private static final long serialVersionUID = 1L;
-
+    private static final int test = 1;
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    // some change
 
     @JsonProperty("checkin_date")
     private LocalDate checkinDate;
